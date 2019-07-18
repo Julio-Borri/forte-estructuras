@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const RespTitle = styled.h1`
+const ResponsiveTitle = styled.h1`
   font-size: 50px;
   font-weight: 700;
   text-transform: uppercase;
@@ -13,4 +13,4 @@ const RespTitle = styled.h1`
   }
 `
 
-export default RespTitle;
+export default ResponsiveTitle;

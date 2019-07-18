@@ -1,40 +1,33 @@
 import React from 'react';
-import ButtonGray from './ButtonGray';
+import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import imgService1 from '../../img/ServiceCard1.png';
 import styled from 'styled-components';
 
 export default function ServiceCard(props) {
   return (
-      <Card style={cardStyle} className="text-center">
-        <Card.Img variant="top" src={imgService1} />
-        <Card.ImgOverlay className="mt-1">  
-        <RespTitle><i className="fas fa-level-down-alt" style={iconStyle}></i> </RespTitle>
-              
+    <Card className="text-center">
+      <Card.Img variant="top" src={imgService1} />
+      <Card.ImgOverlay className="d-flex align-items-start justify-content-center">
         <Card.Title className="text-white font-weight-bold text-uppercase">
           <RespTitle>{props.title}</RespTitle>
         </Card.Title>
-          
-        </Card.ImgOverlay>
-        <Card.Body style={bodyStyle}>
-          <ButtonGray text="leer más" />
-        </Card.Body>
-        
-      </Card>
+      </Card.ImgOverlay>
+      <Card.ImgOverlay className="d-flex align-items-end justify-content-center">        
+        <button 
+          type="button" 
+          class="btn btn-sm btn-outline-light font-weight-bold"
+          href={props.href}
+        >LEER MÁS
+          <i class="fas fa-angle-double-right ml-2" style={iconStyle2}></i>
+        </button>        
+      </Card.ImgOverlay>
+    </Card>
   )
 }
 
-const cardStyle = {
-}
-
-const bodyStyle = {
-  position: "relative",
-  zIndex: "10",
-}
-
-const iconStyle = {
+const iconStyle2 = {
   color: "var(--mainYellow)",
-  transform: "rotate(270deg)",
 }
 
 const RespTitle = styled.h1`

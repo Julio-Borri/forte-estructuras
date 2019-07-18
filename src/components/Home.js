@@ -6,15 +6,13 @@ import bgHeader from '../img/bg_header.png';
 import brandLogo from '../img/forte logo.png';
 import data from '../data';
 import styled, { keyframes } from 'styled-components';
-import Title from './styledComponents/Title';
 import CardDeck from './CardDeck';
-import RespTitle from './styledComponents/RespTitle';
+import ResponsiveTitle from './styledComponents/ResponsiveTitle';
 
 export default function Home() {
-
   return (
     <React.Fragment>
-      <Container fluid style={contStyle} className="d-flex flex-column align-items-center justify-content-center">
+      <Container fluid style={contStyle} className="d-flex flex-column align-items-center justify-content-center w-100">
         <Row className="my-2">
           <Col>
             <img src={brandLogo} style={imgStyle} alt="Brand Logo" />
@@ -23,24 +21,21 @@ export default function Home() {
         <Row className="d-flex flex-column text-uppercase text-center">
           <Col>
             <MovHor>
-              <RespTitle inputColor="white">{data.textosVarios.texto1}</RespTitle>
+              <ResponsiveTitle inputColor="white">{data.textosVarios.texto1}</ResponsiveTitle>
             </MovHor>
           </Col>
           <Col>
             <MovVer>
-              <RespTitle inputColor="var(--mainYellow)">{data.textosVarios.texto2}</RespTitle>
+              <ResponsiveTitle inputColor="var(--mainYellow)">{data.textosVarios.texto2}</ResponsiveTitle>
             </MovVer>
           </Col>
         </Row>
       </Container>
       <Container className="text-center mt-5 mb-4">
-        <RespTitle inputColor="dark">{data.titulos.title1}</RespTitle>
+        <ResponsiveTitle inputColor="dark">{data.titulos.title1}</ResponsiveTitle>
       </Container>
       <Container>
         <CardDeck />
-        
-
-  
       </Container>
     </React.Fragment>
   )
@@ -49,6 +44,9 @@ export default function Home() {
 const contStyle = {
   backgroundImage: 'url(' + bgHeader + ')',
   backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  backgroundAttachment: "fixed",
+  backgroundSize: "cover",
   height: "80vh",
 }
 
