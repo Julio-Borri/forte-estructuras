@@ -7,7 +7,7 @@ import brandLogo from '../img/forte logo.png';
 import data from '../data';
 import styled, { keyframes } from 'styled-components';
 import CardDeck from './CardDeck';
-import ResponsiveTitle from './styledComponents/ResponsiveTitle';
+import ResponsiveTitle from './shared-components/ResponsiveTitle';
 
 export default function Home() {
   return (

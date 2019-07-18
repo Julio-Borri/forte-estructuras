@@ -1,7 +1,6 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import imgService1 from '../../img/ServiceCard1.png';
+import imgService1 from '../img/ServiceCard1.png';
 import styled from 'styled-components';
 
 export default function ServiceCard(props) {

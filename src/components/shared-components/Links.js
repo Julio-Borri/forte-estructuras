@@ -1,14 +1,14 @@
 import React from 'react';
-import Nav from 'react-bootstrap/Nav';
+import StyledLinks from './StyledLinks';
 
 export default function Links(props) {
   return (
-    <Nav.Link
+    <StyledLinks
       href={props.item.link} 
-      className="text-capitalize font-weight-bold text-dark"
+      className="nav-link"
     >
       {props.item.title}
-    </Nav.Link>
+    </StyledLinks>
   )
 }
 
