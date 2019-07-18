@@ -8,6 +8,7 @@ import data from '../data';
 import styled, { keyframes } from 'styled-components';
 import Title from './styledComponents/Title';
 import CardDeck from './CardDeck';
+import RespTitle from './styledComponents/RespTitle';
 
 export default function Home() {
 
@@ -22,19 +23,19 @@ export default function Home() {
         <Row className="d-flex flex-column text-uppercase text-center">
           <Col>
             <MovHor>
-              <h1 className="text-white transform">{data.textosVarios.texto1}</h1>
+              <RespTitle inputColor="white">{data.textosVarios.texto1}</RespTitle>
             </MovHor>
           </Col>
           <Col>
             <MovVer>
-              <h1 className="font-weight-bold ml-2" style={{ color: "var(--mainYellow)" }}>
-                {data.textosVarios.texto2}
-              </h1>
+              <RespTitle inputColor="var(--mainYellow)">{data.textosVarios.texto2}</RespTitle>
             </MovVer>
           </Col>
         </Row>
       </Container>
-      <Title title={data.titulos.title1} />
+      <Container className="text-center mt-5 mb-4">
+        <RespTitle inputColor="dark">{data.titulos.title1}</RespTitle>
+      </Container>
       <Container>
         <CardDeck />
         
@@ -48,7 +49,7 @@ export default function Home() {
 const contStyle = {
   backgroundImage: 'url(' + bgHeader + ')',
   backgroundPosition: "center",
-  height: "70vh",
+  height: "80vh",
 }
 
 const imgStyle = {
@@ -57,7 +58,7 @@ const imgStyle = {
 
 const movHorizontal = keyframes`
   from {
-    transform: translateX(-700px);
+    transform: translateX(-1000px);
   }
   to {
     transform: translateX(0px);
@@ -70,7 +71,7 @@ const MovHor = styled.div`
 
 const movVertical = keyframes`
   from {
-    transform: translateX(700px);
+    transform: translateX(1000px);
   }
   to {
     transform: translateX(0px);

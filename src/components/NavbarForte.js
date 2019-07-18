@@ -22,7 +22,7 @@ export default function NavbarForte() {
       expand="lg"
       style={navStyle}
       variant="light"
-      className="shadow"
+      
       fixed="top"
     >
       <Navbar.Brand href="/">
@@ -48,4 +48,5 @@ export default function NavbarForte() {
 
 const navStyle = {
   background: "var(--mainYellow)",
+  boxShadow: "0 0 6px 0 black",
 }

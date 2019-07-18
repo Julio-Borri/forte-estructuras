@@ -9,19 +9,18 @@ export default function Title(props) {
     <Container className="pt-5">
       <Row>
         <Col>
-          <RespTitle className="text-center text-dark">{props.title}</RespTitle>
+          <RespTitle inputColor={props.color} className="text-center text-dark">{props.title}</RespTitle>
         </Col>
       </Row>
     </Container>
   )
 }
 
-
-
 const RespTitle = styled.h1`
   font-size: 50px;
   font-weight: 700;
   text-transform: uppercase;
+  color: ${props => props.inputColor || "white"};
   @media screen and (max-width: 992px) {
     font-size: 40px;
   }
