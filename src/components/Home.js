@@ -1,33 +1,33 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import bgHeader from '../img/bg_header.png';
-import brandLogo from '../img/forte logo.png';
+import { Container, Row, Col } from 'react-bootstrap';
+import bgHeader from '../img/bg_header2.png';
+import brandLogo from '../img/forte-estructuras logo plano.png';
 import data from '../data';
-import styled, { keyframes } from 'styled-components';
 import CardDeck from './CardDeck';
 import ResponsiveTitle from './shared-components/ResponsiveTitle';
+import FadeIn from './shared-components/FadeIn';
+import styled from 'styled-components';
+
 
 export default function Home() {
   return (
     <React.Fragment>
       <Container fluid style={contStyle} className="d-flex flex-column align-items-center justify-content-center w-100">
-        <Row className="my-2">
+        <Row className="mb-2">
           <Col>
-            <img src={brandLogo} style={imgStyle} alt="Brand Logo" />
+            <ImgResponsive src={brandLogo} alt="Brand Logo" />
           </Col>
         </Row>
         <Row className="d-flex flex-column text-uppercase text-center">
           <Col>
-            <MovHor>
+            <FadeIn sec="2s">
               <ResponsiveTitle inputColor="white">{data.textosVarios.texto1}</ResponsiveTitle>
-            </MovHor>
+            </FadeIn>
           </Col>
           <Col>
-            <MovVer>
+            <FadeIn sec="6s">
               <ResponsiveTitle inputColor="var(--mainYellow)">{data.textosVarios.texto2}</ResponsiveTitle>
-            </MovVer>
+            </FadeIn>
           </Col>
         </Row>
       </Container>
@@ -37,6 +37,8 @@ export default function Home() {
       <Container>
         <CardDeck />
       </Container>
+
+
     </React.Fragment>
   )
 }
@@ -47,35 +49,15 @@ const contStyle = {
   backgroundRepeat: "no-repeat",
   backgroundAttachment: "fixed",
   backgroundSize: "cover",
-  height: "80vh",
+  height: "100vh",
 }
 
-const imgStyle = {
-  height: "300px",
-}
-
-const movHorizontal = keyframes`
-  from {
-    transform: translateX(-1000px);
+const ImgResponsive = styled.img`
+  height: 300px;
+  @media screen and (max-width: 992px) {
+    height: 250px;
   }
-  to {
-    transform: translateX(0px);
+  @media screen and (max-width: 600px) {
+    height: 200px;
   }
-`
-const MovHor = styled.div`
-  animation: ${movHorizontal} 3s ease-in-out;
-  animation-iteration-count: 1;
-`
-
-const movVertical = keyframes`
-  from {
-    transform: translateX(1000px);
-  }
-  to {
-    transform: translateX(0px);
-  }
-`
-const MovVer = styled.div`
-  animation: ${movVertical} 3s ease-in-out;
-  animation-iteration-count: 1;
 `

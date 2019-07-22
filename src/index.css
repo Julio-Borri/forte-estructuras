@@ -1,12 +1,12 @@
 :root {
-  --mainYellow: #fdc006;
+  --mainYellow: #fcc709;
+  /* --mainYellow: #fdc006; */
+  --mainGray: #141615;
+  --secYellow: #fcc709;
 }
 
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif !important;
-}
-
-.sinborde:first-child {
-  border: 1px solid white;
+  background: black;
 }

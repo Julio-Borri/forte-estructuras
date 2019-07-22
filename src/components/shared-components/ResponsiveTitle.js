@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const ResponsiveTitle = styled.h1`
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 700;
   text-transform: uppercase;
   color: ${props => props.inputColor || "white"};

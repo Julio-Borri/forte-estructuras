@@ -1,13 +1,19 @@
 import styled from 'styled-components';
+import Nav from 'react-bootstrap/Nav';
 
-const StyledLinks = styled.a`
-  text-transform: capitalize;
+const StyledLinks = styled(Nav.Link)`
+  text-transform: uppercase;
   font-weight: 700;
-  color: "dark";
-  margin-left: 3px;
-  border-left: 1px solid gray;
+  color: black !important;
+  margin-left: 5px;
+  border-left-width: ${props => props.inputBorder || "0"};
+  border-color: white;
+  border-left-style: dashed;
   @media screen and (max-width: 992px) {
     border: none;
+  }
+  :hover{
+    color: white !important;
   }
 `
 

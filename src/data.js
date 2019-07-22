@@ -22,13 +22,13 @@ const data = {
     },
     {
       id: 5,
-      title: "por que elegirnos",
-      link: "/why",
+      title: "contacto",
+      link: "/contact",
     },
     {
       id: 6,
-      title: "contacto",
-      link: "/contact",
+      title: "por que elegirnos",
+      link: "/why",
     },
   ],
   dataForte: {
@@ -49,46 +49,46 @@ const data = {
   servicios: [
     {
       id: "01",
-      title: "estructuras metálicas",
-      text1:"Nos adaptamos a la necesidad del cliente. Somos especialistas en la fabricación de estructuras metálicas, nos adaptamos a la necesidad del cliente con la mejor atención, calidad y precios.",      
+      title: "Estructuras metálicas",
+      text1:"Somos especialistas en la fabricación de estructuras metálicas, nos adaptamos a la necesidad del cliente con la mejor atención, calidad y precios.",      
       text2:"Por ello le animamos a que se comunique con nosotros o nos visite, amablemente le ofreceremos un café y dialogaremos en cómo solucionar sus problemas.",      
     },
     {
       id: "02",
-      title: "ingeniería",    
+      title: "Ingeniería",    
       text1:"Nuestro equipo de ingenieros especialistas en el área pueden llevar a cabo todo su proyecto.",  
     },
     {
       id: "03",
-      title: "herrería de obra",    
+      title: "Herrería de obra",    
       text1:"Abarcando todas las areas de una metalúgica integral, fabricamos y montamos toda la herrería de obra.",  
     },
     {
       id: "04",
-      title: "cañerías",    
+      title: "Cañerías",    
       text1:"Desde cañerías, hasta redes de incendio, nuestro equipo puede suplir sus necesidades.",   
     },
     {
       id: "05",
-      title: "corte y plegado",  
+      title: "Corte y plegado",  
       text1:"En caso que requiera hacer un trabajo a medida de corte y plegado de chapas, contamos con guillotinas y plegadoras hidráulicas con control numérico para la realización de los mismos.",     
       text2:"Las piezas se realizaran con los planos que nos brinde o con una muestra de la misma.",     
     },
     {
       id: "06",
-      title: "arenado y pintura", 
+      title: "Arenado y pintura", 
       text1:"Se trabaja con arena común y arena certificada, mordiente y color de metal según especificaciones del cliente.",      
       text2:"Primers (Zinc silicatro) fondo cromato de zinc, expocidicas, sintética, poliuretanicas, barnices y lacas.",      
     },
     {
       id: "07",
-      title: "tanques y servicios",   
+      title: "Tanques y servicios",   
       text1:"Fabricamos tanques de chapa, de acero al carbono de primera calidad, rolada con doble soldadura -interior exterior-; con tecnología, normas de seguridad, y accesorios homologados.",    
     },
     {
       id: "08",
-      title: "corte pantógrafo cnc",  
-      text1:"",     
+      title: "Corte pantógrafo cnc",  
+      text1:"A efecto de brindar soluciones específicamente elaboradas de acuerdo a las necesidades de nuestros clientes ofrecemos un amplio rango de aplicaciones y servicios de cortes en distintos espesores con pantógrafo CNC.",     
     },
   ],
   textosVarios: {
@@ -102,6 +102,65 @@ const data = {
     texto8: "Por ello le animamos a que se comunique con nosotros o nos visite, amablemente le ofreceremos un café y dialogaremos en cómo solucionar sus problemas.",
     texto9: "SI TIENES ALGUNA PREGUNTA, COMENTARIOS SIENTETE LIBRE DE CONTACTARNOS",
   },
+  footerIconsBig : [
+    {
+      id: 1,
+      icon: "fab fa-whatsapp fa-2x",
+      text: "3571-323500",
+    },
+    {
+      id: 2,
+      icon: "fab fa-facebook fa-2x",
+      text: "FORTEstructuras",
+    },
+    {
+      id: 3,
+      icon: "fab fas fa-phone fa-2x",
+      text: "03571-643736",
+    },
+  ],
+  footerIconsSmall: [
+    {
+      id: "01",
+      text: "Estructuras metálicas",
+      icon: "",
+    },
+    {
+      id: "02",
+      text: "Ingeniería",    
+      icon: "",
+    },
+    {
+      id: "03",
+      text: "Herrería de obra",  
+      icon: "",  
+    },
+    {
+      id: "04",
+      text: "Cañerías",
+      icon: "",    
+    },
+    {
+      id: "05",
+      text: "Corte y plegado", 
+      icon: "", 
+    },
+    {
+      id: "06",
+      text: "Arenado y pintura", 
+      icon: "", 
+    },
+    {
+      id: "07",
+      text: "Tanques y servicios", 
+      icon: "",   
+    },
+    {
+      id: "08",
+      text: "Corte pantógrafo cnc",
+      icon: "",   
+    },
+  ],
 }
 
 export default data;
