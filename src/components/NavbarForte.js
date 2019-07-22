@@ -30,7 +30,7 @@ export default function NavbarForte() {
             {linkList}
             <StyledLinksIcon inputColor="#3b5998"><i class="fab fa-facebook fa-2x mt-1"></i></StyledLinksIcon>
             <StyledLinksIcon inputColor="#25D366"><i class="fab fa-whatsapp fa-2x mt-1"></i></StyledLinksIcon>
-            <StyledLinksIcon inputColor="white"><i class="fas fa-phone fa-2x mt-1"></i></StyledLinksIcon>
+            <StyledLinksIcon inputColor="white"><i class="fas fa-phone-square-alt fa-2x mt-1"></i></StyledLinksIcon>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

@@ -71,9 +71,9 @@ const footerStyle = {
 const ImgResponsive = styled.img`
   height: 150px;
   @media screen and (max-width: 992px) {
-    height: 100px;
+    height: 125px;
   }
   @media screen and (max-width: 600px) {
-    height: 100px;
+    height: 125px;
   }
 `

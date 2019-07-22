@@ -5,7 +5,7 @@ const StyledLinks = styled(Nav.Link)`
   text-transform: uppercase;
   font-weight: 700;
   color: black !important;
-  margin-left: 5px;
+  margin-right: 8px;
   border-left-width: ${props => props.inputBorder || "0"};
   border-color: white;
   border-left-style: dashed;

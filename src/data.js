@@ -105,17 +105,19 @@ const data = {
   footerIconsBig : [
     {
       id: 1,
-      icon: "fab fa-whatsapp fa-2x",
-      text: "3571-323500",
-    },
-    {
-      id: 2,
       icon: "fab fa-facebook fa-2x",
       text: "FORTEstructuras",
     },
     {
+      id: 2,
+      icon: "fab fa-whatsapp fa-2x",
+      //icon: "fab fa-whatsapp-square fa-2x",
+      text: "3571-323500",
+    },
+    {
       id: 3,
-      icon: "fab fas fa-phone fa-2x",
+      //icon: "fab fas fa-phone fa-2x",
+      icon: "fas fa-phone-square-alt fa-2x",
       text: "03571-643736",
     },
   ],
