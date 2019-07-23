@@ -13,6 +13,4 @@ margin-left: 5px;
 }
 `
 
-
-
 export default StyledLinksIcon;

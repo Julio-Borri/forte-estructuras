@@ -7,7 +7,7 @@ export default function ServiceCard(props) {
   const [modalShow, setModalShow] = React.useState(false);
 
   return (
-    <Card className="text-center shadow" style={{height:"150px"}}>
+    <HoveredCard className="text-center" style={{height:"150px"}}>
       <Card.Img variant="top" src={props.img} style={{overflow: "hidden", height:"100%", objectFit: "cover"}}/>
       <Card.ImgOverlay className="d-flex align-items-start justify-content-center">
         <Card.Title className="text-white font-weight-bold text-uppercase">
@@ -34,7 +34,7 @@ export default function ServiceCard(props) {
           />
         </ButtonToolbar>
       </Card.ImgOverlay>
-    </Card>
+    </HoveredCard>
   )
 }
 
@@ -47,5 +47,11 @@ const RespTitle = styled.h1`
   font-weight: 700;
   @media screen and (max-width: 992px) {
     font-size: 20px;
+  }
+`
+
+const HoveredCard = styled(Card)`
+  :hover {
+    box-shadow: 0 0 6px 0 black;
   }
 `

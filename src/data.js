@@ -1,3 +1,12 @@
+import team1 from './img/team1.png';
+import team2 from './img/team2.png';
+import team3 from './img/team3.png';
+import team4 from './img/team4.png';
+
+
+
+
+
 const data = {
   dataLinks: [
     {
@@ -161,6 +170,32 @@ const data = {
       id: "08",
       text: "Corte pantógrafo cnc",
       icon: "",   
+    },
+  ],
+  team: [
+    {
+      id: 1,
+      name: "José Carbajal",
+      position: "owner",
+      picture: {team1},
+    },
+    {
+      id: 2,
+      name: "Vanesa Figueroa",
+      position: "Administración",
+      picture: {team2},
+    },
+    {
+      id: 3,
+      name: "Pablo Puecher",
+      position: "Director de construcción",
+      picture: {team3},
+    },
+    {
+      id: 4,
+      name: "Rolando Pizzi",
+      position: "ingenieria",
+      picture: {team4},
     },
   ],
 }

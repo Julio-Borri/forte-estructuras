@@ -15,7 +15,7 @@ export default function AboutUs() {
             <ResponsiveTitle
               inputColor="dark"
               fontSizeHigh="50px"
-              fontSizeMEdium="35px"
+              fontSizeMedium="35px"
               fontSizeSmall="30px"
             >{data.titulos.title4}
             </ResponsiveTitle>
@@ -48,8 +48,8 @@ const ImgResponsive = styled.img`
   height: 300px;
   @media screen and (max-width: 992px) {
     height: 250px;
-  }
+  };
   @media screen and (max-width: 600px) {
     height: 200px;
-  }
+  };
 `
