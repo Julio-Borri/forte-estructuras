@@ -5,6 +5,9 @@ import { Switch, Route } from 'react-router-dom';
 import NavbarForte from './components/NavbarForte';
 import Home from './components/Home';
 import Footer from './components/Footer';
+import QuienesSomos from './components/QuienesSomos';
+import ServiciosCompleto from './components/ServiciosCompleto';
+
 
 function App() {
   return (
@@ -12,6 +15,8 @@ function App() {
       <NavbarForte />
       <Switch>
         <Route path="/" exact component={Home} />
+        <Route path="/about" component={QuienesSomos} />
+        <Route path="/services" component={ServiciosCompleto} />
       </Switch>
       <Footer />
     </React.Fragment>

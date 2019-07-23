@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 export default function TeamCard(props) {
-  
-  
   return (
     <StyledDiv className="my-3" bgPicture={props.teamImg} >
       <SkewedDiv >
@@ -19,7 +17,7 @@ export default function TeamCard(props) {
 }
 
 const StyledDiv = styled.div`
-  height: 300px;
+  height: 350px;
   width: 100%;
   background-image: url(${props => props.bgPicture});
   background-position: center center;
@@ -36,6 +34,6 @@ const SkewedDiv = styled.div`
 
 const divSmall = {
   width: "100%",
-  height: "300px",
+  height: "350px",
   letterSpacing: "-1px",
 }

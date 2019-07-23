@@ -1,17 +1,15 @@
 import React from 'react';
-import Header from './Header';
-import Services from './Services';
 import AboutUs from './AboutUs';
 import TeamCardGroup from './TeamCardGroup';
 import JumbotronContact from './JumbotronContact';
+import MargenTop from './shared-components/MargenTop';
 
-export default function Home() {
+export default function QuienesSomos() {
   return (
     <React.Fragment>
-      <Header />
-      <Services />
-      <TeamCardGroup />
+      <MargenTop margin="120px" />
       <AboutUs />
+      <TeamCardGroup />
       <JumbotronContact />
     </React.Fragment>
   )

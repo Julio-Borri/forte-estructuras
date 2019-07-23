@@ -24,7 +24,7 @@ import imgColorService8 from '../img/ServiceCardColor8.png';
 export default function CardDeck() {
   return (
     <Container>
-      <Row className="my-3">
+      <Row>
         <Col lg className="my-3">
           <ServiceCard item={data.servicios[0]} img={imgService1} imgColor={imgColorService1} />
         </Col>
@@ -38,7 +38,7 @@ export default function CardDeck() {
           <ServiceCard item={data.servicios[3]} img={imgService4} imgColor={imgColorService4} />
         </Col>
       </Row>
-      <Row className="mt-3">
+      <Row>
         <Col lg className="my-3">
           <ServiceCard item={data.servicios[4]} img={imgService5} imgColor={imgColorService5} />
         </Col>
