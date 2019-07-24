@@ -1,22 +1,17 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
-import ServiceCard from './ServiceCard';
+import ServiceCard2 from './ServiceCard2';
 import data from '../data';
 
 export default function CardDeck() {
   
-  const listadoDeServicios1 = data.servicios.slice(0,4).map(item => 
-    <ServiceCard item={item} />)
-  const listadoDeServicios2 = data.servicios.slice(4,8).map(item => 
-    <ServiceCard item={item} />)
+  const listadoDeServicios1 = data.servicios.map(item => 
+    <ServiceCard2 item={item} />)
   
   return (
     <Container>
       <Row>
         {listadoDeServicios1}
-      </Row>
-      <Row>
-        {listadoDeServicios2}
       </Row>
     </Container>
   )

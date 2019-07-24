@@ -7,6 +7,8 @@ import Home from './components/Home';
 import Footer from './components/Footer';
 import QuienesSomos from './components/QuienesSomos';
 import ServiciosCompleto from './components/ServiciosCompleto';
+import InsideProject from './components/InsideProject';
+import Contact from './components/Contact';
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/about" component={QuienesSomos} />
         <Route path="/services" component={ServiciosCompleto} />
+        <Route path="/project" component={InsideProject} />
+        <Route path="/contact" component={Contact} />
       </Switch>
       <Footer />
     </React.Fragment>

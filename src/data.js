@@ -227,6 +227,23 @@ const data = {
       picture: team4,
     },
   ],
+  formulario: {
+    form1: {
+      label: "Nombre:",
+      placeHolder: "Ingrese su nombre",
+      helpText: "",
+    },
+    form2: {
+      label: "Dirección de e-mail:",
+      placeHolder: "Ingrese su email",
+      helpText: "No compartiremos tu email",
+    },
+    form3: {
+      label: "Deja tu mensaje:",
+      placeHolder: "Tu consulta es bienvenida!",
+      helpText: "",
+    },
+  },
 }
 
 export default data;
