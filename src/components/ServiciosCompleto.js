@@ -1,10 +1,12 @@
 import React from 'react';
-import { Container, } from 'react-bootstrap';
-import MargenTop from './shared-components/MargenTop';
+import { Container, Row, Col, } from 'react-bootstrap';
 import data from '../data';
 import ResponsiveTitle from './shared-components/ResponsiveTitle';
 import ServiciosCompletosCard from './shared-components/ServiciosCompletosCard';
 import JumbotronContact from './JumbotronContact';
+import styled from 'styled-components';
+import SkewedRow from './shared-components/SkewedRow';
+import bgJumbotron from '../img/bgJumbotron.png';
 
 export default function ServiciosCompleto(props) {
 
@@ -13,17 +15,21 @@ export default function ServiciosCompleto(props) {
   
     return (
     <React.Fragment >
-      <MargenTop margin="120px" />
-      <Container className="text-center mt-5 mb-4">
-        <ResponsiveTitle
-          inputColor="dark"
-          fontSizeHigh="50px"
-          fontSizeMEdium="35px"
-          fontSizeSmall="30px"
-        >{data.titulos.title1}
-        </ResponsiveTitle>
-      </Container>
-      <Container className="mb-5">
+      <MainContainer fluid>
+        <Row >
+          <Col className="text-center mt-5 mb-4 pb-5">
+            <ResponsiveTitle
+              inputColor="white"
+              fontSizeHigh="50px"
+              fontSizeMEdium="35px"
+              fontSizeSmall="30px"
+            >{data.titulos.title1}
+            </ResponsiveTitle >
+          </Col>
+        </Row>
+        <SkewedRow />
+      </MainContainer>
+      <Container className="my-5">
         {listadoCartasDeServicio}
       </Container>
       <JumbotronContact />
@@ -31,3 +37,13 @@ export default function ServiciosCompleto(props) {
   )
 }
 
+
+const MainContainer = styled(Container)`
+  background: url(${bgJumbotron});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 80px;
+  text-transform: lowercase !important;
+`

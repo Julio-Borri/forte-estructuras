@@ -4,6 +4,7 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import bgJumbotron from '../img/bgJumbotron.png';
 import ResponsiveTitle from './shared-components/ResponsiveTitle';
 import data from '../data';
+import SkewedRow from './shared-components/SkewedRow';
 
 export default function JumbotronContact() {
   return (
@@ -20,16 +21,13 @@ export default function JumbotronContact() {
               </ResponsiveTitle>
             </Col>
           </Row>
-          <Row>
-            <SkewedDiv2></SkewedDiv2>
-            <SkewedDiv1></SkewedDiv1>
-          </Row>
+          <SkewedRow />
       </MainContainer>
       <Container>
         <Row className="m-auto text-center" style={{width: "300px"}}>
           <Col className="text-center my-2">
             <p className="mt-2">{data.textosVarios.texto9}</p>
-            <Button variant="outline-dark font-weight-bold" size="sm">Contacto</Button>
+            <Button variant="outline-dark font-weight-bold" size="sm" href="/contact">Contacto</Button>
           </Col>
         </Row>
       </Container>

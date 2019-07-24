@@ -23,7 +23,8 @@ function ServiceModal(props) {
             <Col xs={12} md={6} className="mt-2">
               <p className="">{props.text1}</p>
               <p>{props.text2}</p>
-              <Button onClick={props.onHide} variant="outline-dark" size="sm" block>Contactanos</Button>
+              <Button onClick={props.onHide} variant="outline-dark" size="sm" block href="/contact"  >
+                Contactanos</Button>
             </Col>
           </Row>
         </Container>

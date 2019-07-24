@@ -145,18 +145,28 @@ const data = {
       id: 1,
       icon: "fab fa-facebook fa-2x",
       text: "FORTEstructuras",
+      href: "https://www.facebook.com/FORTEstructuras/"
     },
     {
       id: 2,
       icon: "fab fa-whatsapp fa-2x",
       //icon: "fab fa-whatsapp-square fa-2x",
       text: "3571-323500",
+      href:"https://wa.me/5493571323500",
     },
     {
       id: 3,
       //icon: "fab fas fa-phone fa-2x",
       icon: "fas fa-phone-square-alt fa-2x",
       text: "03571-643736",
+      href: "/contact"
+    },
+    {
+      id: 4,
+      //icon: "fab fas fa-phone fa-2x",
+      icon: "far fa-envelope fa-2x",
+      text: "info@fortestructuras.com",
+      href: "/contact"
     },
   ],
   footerIconsSmall: [
@@ -164,41 +174,49 @@ const data = {
       id: "01",
       text: "Estructuras metálicas",
       icon: "",
+      href: "/services"
     },
     {
       id: "02",
       text: "Ingeniería",    
       icon: "",
+      href: "/services"
     },
     {
       id: "03",
       text: "Herrería de obra",  
-      icon: "",  
+      icon: "",
+      href: "/services"  
     },
     {
       id: "04",
       text: "Cañerías",
-      icon: "",    
+      icon: "",
+      href: "/services"    
     },
     {
       id: "05",
       text: "Corte y plegado", 
-      icon: "", 
+      icon: "",
+      href: "/services" 
     },
     {
       id: "06",
       text: "Arenado y pintura", 
-      icon: "", 
+      icon: "",
+      href: "/services" 
     },
     {
       id: "07",
       text: "Tanques y servicios", 
-      icon: "",   
+      icon: "",
+      href: "/services"   
     },
     {
       id: "08",
       text: "Corte pantógrafo cnc",
-      icon: "",   
+      icon: "",
+      href: "/services"   
     },
   ],
   team: [

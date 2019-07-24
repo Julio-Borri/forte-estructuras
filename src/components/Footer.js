@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, } from 'react-bootstrap';
 import styled from 'styled-components';
 import brandLogoFE from '../img/forte-estructuras logo plano.png';
 import data from '../data';
@@ -22,7 +22,7 @@ export default function Footer() {
       <Container fluid style={footerStyle} className="mt-5">
         <Row>
           <Col xs={12} md={3} className="d-flex justify-content-center py-4">
-              <ImgResponsive src={brandLogoFE} alt="Brand Logo" />
+              <a href="/"><ImgResponsive src={brandLogoFE} alt="Brand Logo" /></a>
           </Col>
           <Col xs={12} md={3} className="d-flex justify-content-center py-3">
             <Row className="d-flex flex-column text-white">

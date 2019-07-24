@@ -32,9 +32,11 @@ const ColImagenServicio = styled(Col)`
   box-shadow: 0 0 6px 0 black;
   font-size: 22px;
   font-weight: 700;
-  height: 80px;
+  height: 150px;
   :hover {
     background-image: url(${props => props.pictureColor});
+    transform: scale(1.01);
+    transition: transform 0.1s ease-in-out;
   }
 `
 

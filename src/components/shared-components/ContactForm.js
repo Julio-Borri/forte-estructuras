@@ -18,7 +18,7 @@ export default function ContactForm() {
         <Form.Label>{data.formulario.form3.label}</Form.Label>
         <Form.Control as="textarea" rows="5" placeholder={data.formulario.form3.placeHolder} />
       </Form.Group>
-      <Button variant="dark" type="submit">Enviar</Button>
+      <Button variant="outline-dark" type="submit" block >Enviar</Button>
     </Form>
   )
 }
