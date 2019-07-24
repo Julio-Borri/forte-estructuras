@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, ButtonToolbar } from 'react-bootstrap';
+import { Card, ButtonToolbar, Col } from 'react-bootstrap';
 import styled from 'styled-components';
 import ServiceModal from './shared-components/ServiceModal';
 
@@ -7,8 +7,9 @@ export default function ServiceCard(props) {
   const [modalShow, setModalShow] = React.useState(false);
 
   return (
+    <Col lg className="my-3">
     <HoveredCard className="text-center" style={{height:"150px"}}>
-      <Card.Img variant="top" src={props.img} style={{overflow: "hidden", height:"100%", objectFit: "cover"}}/>
+      <Card.Img variant="top" src={props.item.img} style={{overflow: "hidden", height:"100%", objectFit: "cover"}}/>
       <Card.ImgOverlay className="d-flex align-items-start justify-content-center">
         <Card.Title className="text-white font-weight-bold text-uppercase">
           <RespTitle>{props.item.title}</RespTitle>
@@ -27,7 +28,7 @@ export default function ServiceCard(props) {
           <ServiceModal
             show={modalShow}
             onHide={() => setModalShow(false)}
-            imgColor={props.imgColor}
+            imgColor={props.item.imgColor}
             title={props.item.title}
             text1={props.item.text1}
             text2={props.item.text2}
@@ -35,6 +36,7 @@ export default function ServiceCard(props) {
         </ButtonToolbar>
       </Card.ImgOverlay>
     </HoveredCard>
+    </Col>
   )
 }
 

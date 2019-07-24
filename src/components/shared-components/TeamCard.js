@@ -1,25 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Col } from 'react-bootstrap';
 
 export default function TeamCard(props) {
   return (
-    <StyledDiv className="my-3" bgPicture={props.teamImg} >
-      <SkewedDiv >
-        <div className="d-flex align-items-end justify-content-end m-auto" style={divSmall} >
-          <div>
-            <h5 className="text-dark font-weight-bold text-right mr-2">{props.item.name}</h5>
-            <h6 className="text-white font-weight-bold text-right text-uppercase mr-2 text-nowrap">{props.item.position}</h6>
-          </div>  
-        </div> 
-      </SkewedDiv>
-    </StyledDiv>
+    <Col xs={12} md={3}>
+      <StyledDiv className="my-3" picture={props.item.picture} >
+        <SkewedDiv >
+          <div className="d-flex align-items-end justify-content-end m-auto" style={divSmall} >
+            <div>
+              <h5 className="text-dark font-weight-bold text-right mr-2">{props.item.name}</h5>
+              <h6 className="text-white font-weight-bold text-right text-uppercase mr-2 text-nowrap">{props.item.position}</h6>
+            </div>
+          </div>
+        </SkewedDiv>
+      </StyledDiv>
+    </Col>
   )
 }
 
 const StyledDiv = styled.div`
   height: 350px;
   width: 100%;
-  background-image: url(${props => props.bgPicture});
+  background-image: url(${props => props.picture});
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

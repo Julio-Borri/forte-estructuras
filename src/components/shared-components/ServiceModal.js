@@ -11,7 +11,7 @@ function ServiceModal(props) {
       centered
     >
       <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter" className="text-capitalize">
+        <Modal.Title id="contained-modal-title-vcenter" className="text-uppercase">
           {props.title}
         </Modal.Title>
       </Modal.Header>
