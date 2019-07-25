@@ -11,7 +11,7 @@ const navStyle = {
 }
 
 export default function NavbarForte() {
-  const linkList = data.dataLinks.slice(1, 5).map(
+  const linkList = data.dataLinks.slice(1, 4).map(
     item => <Links key={item.id} item={item} border={"0px"} />)
 
   return (

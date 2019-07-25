@@ -37,18 +37,18 @@ const data = {
       title: "servicios",
       link: "/services",
     },
+    // {
+    //   id: 4,
+    //   title: "inside project",
+    //   link: "/project",
+    // },
     {
       id: 4,
-      title: "inside project",
-      link: "/project",
-    },
-    {
-      id: 5,
       title: "contacto",
       link: "/contact",
     },
     {
-      id: 6,
+      id: 5,
       title: "por que elegirnos",
       link: "/why",
     },
