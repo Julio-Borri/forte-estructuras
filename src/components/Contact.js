@@ -1,6 +1,6 @@
 import React from 'react';
 import ContactForm from './shared-components/ContactForm';
-import { ResponsiveTitle, MainContainer, } from './shared-components/StyledComponents';
+import { ResponsiveTitle, MainContainer2, } from './shared-components/StyledComponents';
 import data from '../data';
 import { Container, Row, Col, } from 'react-bootstrap';
 import FooterLinks from './shared-components/FooterLinks';
@@ -13,7 +13,7 @@ export default function Contact() {
 
   return (
     <React.Fragment>
-      <MainContainer fluid>
+      <MainContainer2 fluid>
         <Row >
           <Col className="text-center mt-5 mb-4">
             <ResponsiveTitle
@@ -38,7 +38,7 @@ export default function Contact() {
           </Col>
         </Row>
         <SkewedRow />
-      </MainContainer>
+      </MainContainer2>
       <Container>
         <Row className="text-center">
           <Col>

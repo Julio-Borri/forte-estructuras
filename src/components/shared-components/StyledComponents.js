@@ -51,6 +51,16 @@ export const MainContainer = styled(Container)`
   text-transform: lowercase !important;
 `
 
+export const MainContainer2 = styled(Container)`
+  background: url(${bgJumbotron});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 80px;
+  text-transform: lowercase !important;
+`
+
 const fadeInConst = keyframes`
 from { opacity: 0; };
 to { opacity: 1; };
