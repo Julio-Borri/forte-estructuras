@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
-import { StyledDivTeamCard, SkewedDivTeamCard, } from './StyledComponents';
+import { StyledDivTeamCard, SkewedDivTeamCard, StyledH5, } from './StyledComponents';
 
 const divSmall = {
   width: "100%",
@@ -10,13 +10,25 @@ const divSmall = {
 
 export default function TeamCard(props) {
   return (
-    <Col xs={12} md={3}>
+    <Col xs={12} md={6} lg={3}>
       <StyledDivTeamCard className="my-3" picture={props.item.picture} >
         <SkewedDivTeamCard>
           <div className="d-flex align-items-end justify-content-end m-auto" style={divSmall} >
             <div>
-              <h5 className="text-dark font-weight-bold text-right mr-2">{props.item.name}</h5>
-              <h6 className="text-white font-weight-bold text-right text-uppercase mr-2 text-nowrap">{props.item.position}</h6>
+              <StyledH5
+              fontSizeHigh="16px"
+              fontSizeMedium="16px"
+              fontSizeSmall="16px"
+              className="text-dark text-capitalize font-weight-bold text-right mr-2 text-nowrap"
+              >{props.item.name}
+              </StyledH5>
+              <StyledH5
+              fontSizeHigh="16px"
+              fontSizeMedium="16px"
+              fontSizeSmall="16px"
+              className="text-white text-uppercase font-weight-bold text-right mr-2 text-nowrap"
+              >{props.item.position}
+              </StyledH5>
             </div>
           </div>
         </SkewedDivTeamCard>

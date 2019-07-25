@@ -5,7 +5,7 @@ import { ResponsiveTitle, ColImagenServicio2, } from './shared-components/Styled
 
 export default function ServiceCard(props) {
   return (
-    <Col className="mb-4 " xs={12} md={6}>
+    <Col className="mb-4" xs={12} md={6}>
       <ColImagenServicio2 picture={props.item.img}
         className="text-white d-flex flex-column justify-content-around" >
         <div className="text-center">

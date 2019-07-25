@@ -15,7 +15,7 @@ export default function ServiciosCompletosCard(props) {
       >{props.item.title}
       </ResponsiveTitle>
       <Row className="mx-2 mb-4 justify-content-center " >
-        <ColImagenServicio picture={props.item.img} pictureColor={props.item.imgColor} 
+        <ColImagenServicio picture={props.item.img}  
           xs={12} md={8} className="text-white d-flex align-items-end justify-content-end" >
           <ButtonModalShow item={props.item} />
         </ColImagenServicio>

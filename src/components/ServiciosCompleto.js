@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, } from 'react-bootstrap';
 import data from '../data';
-import { ResponsiveTitle, MainContainer, } from './shared-components/StyledComponents';
+import { ResponsiveTitle, MainContainer2, } from './shared-components/StyledComponents';
 import ServiciosCompletosCard from './shared-components/ServiciosCompletosCard';
 import JumbotronContact from './JumbotronContact';
 import SkewedRow from './shared-components/SkewedRow';
@@ -13,7 +13,7 @@ export default function ServiciosCompleto(props) {
   
     return (
     <React.Fragment >
-      <MainContainer fluid>
+      <MainContainer2 fluid>
         <Row >
           <Col className="text-center mt-5 mb-4 pb-5">
             <ResponsiveTitle
@@ -26,7 +26,7 @@ export default function ServiciosCompleto(props) {
           </Col>
         </Row>
         <SkewedRow />
-      </MainContainer>
+      </MainContainer2>
       <Container className="my-5">
         {listadoCartasDeServicio}
       </Container>

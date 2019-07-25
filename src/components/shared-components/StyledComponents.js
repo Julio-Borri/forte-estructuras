@@ -136,7 +136,6 @@ export const ColImagenServicio = styled(Col)`
   font-weight: 700;
   height: 150px;
   :hover {
-    background-image: url(${props => props.pictureColor});
     transform: scale(1.01);
     transition: transform 0.1s ease-in-out;
   };
@@ -185,4 +184,14 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: cover;
 height: 100vh;
+`
+
+export const StyledH5 = styled.h5`
+  font-size: ${props => props.fontSizeHigh};
+  @media screen and (max-width: 1024px) {
+    font-size: ${props => props.fontSizeMedium};
+  };
+  @media screen and (max-width: 768px) {
+    font-size: ${props => props.fontSizeSmall};
+  };
 `
