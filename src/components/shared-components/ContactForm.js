@@ -4,7 +4,7 @@ import data from '../../data';
 
 export default function ContactForm() {
   return (
-    <Form style={formStyle} className="m-auto border p-4">
+    <Form style={{ maxWidth: "700px", marginBottom: "1110px", }} className="m-auto border p-4">
       <Form.Group>
         <Form.Label>{data.formulario.form1.label}</Form.Label>
         <Form.Control type="text" placeholder={data.formulario.form1.placeHolder} />
@@ -21,9 +21,4 @@ export default function ContactForm() {
       <Button variant="outline-dark" type="submit" block >Enviar</Button>
     </Form>
   )
-}
-
-const formStyle = {
-  maxWidth: "700px",
-  marginBottom: "1110px",
 }

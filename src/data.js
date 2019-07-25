@@ -123,7 +123,7 @@ const data = {
     },
     {
       id: "08",
-      title: "Corte pantógrafo cnc",  
+      title: "Corte pantógrafo CNC",  
       text1:"A efecto de brindar soluciones específicamente elaboradas de acuerdo a las necesidades de nuestros clientes ofrecemos un amplio rango de aplicaciones y servicios de cortes en distintos espesores con pantógrafo CNC.",     
       img: imgService8,
       imgColor: imgColorService8,
@@ -138,7 +138,7 @@ const data = {
     texto6: "Estamos situados en calle Av. Savio 1837 de la Ciudad de Río Tercero, Córdoba. Ubicados en un punto neurálgico de nuestro país, una ciudad altamente productiva y equidistante de cualquier lugar del país.",
     texto7: "Porque queremos conocerle, no escribimos una amplia descripción de quienes somos, nos interesa el contacto persona a persona, un apretón de manos y la confianza que se transmite en el contacto real.",
     texto8: "Por ello le animamos a que se comunique con nosotros o nos visite, amablemente le ofreceremos un café y dialogaremos en cómo solucionar sus problemas.",
-    texto9: "SI TIENES ALGUNA PREGUNTA, COMENTARIOS SIENTETE LIBRE DE CONTACTARNOS",
+    texto9: "SI TIENES ALGUNA PREGUNTA O COMENTARIO CONTACTANOS!",
   },
   footerIconsBig : [
     {
@@ -214,7 +214,7 @@ const data = {
     },
     {
       id: "08",
-      text: "Corte pantógrafo cnc",
+      text: "Corte pantógrafo CNC",
       icon: "",
       href: "/services"   
     },

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, } from 'react-bootstrap';
 import data from '../data';
-import ResponsiveTitle from './shared-components/ResponsiveTitle';
+import { ResponsiveTitle, } from './shared-components/StyledComponents';
 import ServiciosCompletosCard from './shared-components/ServiciosCompletosCard';
 import JumbotronContact from './JumbotronContact';
 import styled from 'styled-components';

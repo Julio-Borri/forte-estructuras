@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import CardDeck from './CardDeck';
-import ResponsiveTitle from './shared-components/ResponsiveTitle';
+import { ResponsiveTitle, } from './shared-components/StyledComponents';
 import data from '../data';
 
 export default function Services() {

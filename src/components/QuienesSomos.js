@@ -2,7 +2,7 @@ import React from 'react';
 import AboutUs from './AboutUs';
 import TeamCardGroup from './TeamCardGroup';
 import JumbotronContact from './JumbotronContact';
-import MargenTop from './shared-components/MargenTop';
+import { MargenTop, } from './shared-components/StyledComponents';
 
 export default function QuienesSomos() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import ContactForm from './shared-components/ContactForm';
-import ResponsiveTitle from './shared-components/ResponsiveTitle';
+import { ResponsiveTitle, } from './shared-components/StyledComponents';
 import data from '../data';
 import { Container, Row, Col, } from 'react-bootstrap';
 import FooterLinks from './shared-components/FooterLinks';

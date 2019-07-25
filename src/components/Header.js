@@ -1,10 +1,10 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import data from '../data';
-import ResponsiveTitle from './shared-components/ResponsiveTitle';
+import { ResponsiveTitle, } from './shared-components/StyledComponents';
 import bgHeader from '../img/bg_header2.png';
 import brandLogo from '../img/forte-estructuras logo plano.png';
-import FadeIn from './shared-components/FadeIn';
+import { FadeIn, } from './shared-components/StyledComponents';
 import styled from 'styled-components';
 
 export default function Header() {

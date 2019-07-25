@@ -2,6 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 import { Nav, Col, } from 'react-bootstrap';
 
+const StyledLinksIcon = styled(Nav.Link)`
+color: var(--mainYellow);
+margin-right: 20px;
+font-size: ${props => props.fontSize};
+:hover{
+  color: white;
+};
+`
+
 export default function FooterLinks(props) {
   return (
     <Col>
@@ -13,11 +22,3 @@ export default function FooterLinks(props) {
   )
 }
 
-const StyledLinksIcon = styled(Nav.Link)`
-color: var(--mainYellow);
-margin-right: 20px;
-font-size: ${props => props.fontSize};
-:hover{
-  color: white;
-}
-`

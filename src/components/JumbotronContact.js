@@ -1,10 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import bgJumbotron from '../img/bgJumbotron.png';
-import ResponsiveTitle from './shared-components/ResponsiveTitle';
 import data from '../data';
 import SkewedRow from './shared-components/SkewedRow';
+import { MainContainer, ResponsiveTitle, } from './shared-components/StyledComponents';
 
 export default function JumbotronContact() {
   return (
@@ -35,22 +33,3 @@ export default function JumbotronContact() {
   )
 }
 
-const MainContainer = styled(Container)`
-  background: url(${bgJumbotron});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  margin-top: 80px;
-  text-transform: lowercase !important;
-`
-const SkewedDiv1 = styled(Col)`
-  border-bottom: 30px solid white;
-  border-left: 30px solid transparent;
-  height: 100%;
-`
-const SkewedDiv2 = styled(Col)`
-  border-bottom: 30px solid white;
-  border-right: 30px solid transparent;
-  height: 100%;
-`

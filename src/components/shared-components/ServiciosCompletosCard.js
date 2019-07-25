@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col, } from 'react-bootstrap';
-import ResponsiveTitle from './ResponsiveTitle';
+import { ResponsiveTitle } from './StyledComponents';
 import styled from 'styled-components';
 import ButtonModalShow from './ButtonModalShow';
 

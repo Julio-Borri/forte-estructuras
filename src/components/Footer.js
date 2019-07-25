@@ -1,10 +1,10 @@
 import React from 'react';
 import { Container, Row, Col, } from 'react-bootstrap';
-import styled from 'styled-components';
 import brandLogoFE from '../img/forte-estructuras logo plano.png';
 import data from '../data';
 import FooterLinks from './shared-components/FooterLinks';
 import BrandLogo from './shared-components/BrandLogo';
+import { ImgResponsive, } from './shared-components/StyledComponents';
 
 export default function Footer() {
 
@@ -21,8 +21,10 @@ export default function Footer() {
     <React.Fragment>
       <Container fluid style={footerStyle} className="mt-5">
         <Row>
-          <Col xs={12} md={3} className="d-flex justify-content-center py-4">
-              <a href="/"><ImgResponsive src={brandLogoFE} alt="Brand Logo" /></a>
+          <Col xs={12} md={3} className="d-flex justify-content-center align-items-center py-4">
+              <a href="/">
+                <ImgResponsive src={brandLogoFE} alt="Brand Logo" normalHeight="150px" mediumHeight="125px" smallHeight="125px" />
+              </a>
           </Col>
           <Col xs={12} md={3} className="d-flex justify-content-center py-3">
             <Row className="d-flex flex-column text-white">
@@ -48,7 +50,7 @@ export default function Footer() {
       <Container fluid style={{background: "black"}}>
         <Row>
           <Col xs={12} md={6} className="text-white text-center d-flex align-items-center justify-content-center py-2">
-            <span>FORTE ESTRUCTURAS | all rights reserved © </span>
+            <span>FORTE ESTRUCTURAS | all rights reserved ® </span>
           </Col>
           <Col xs={12} md={6} className="text-white text-center d-flex align-items-center justify-content-center py-2">
             <span className="mr-2 font-italic">
@@ -57,9 +59,7 @@ export default function Footer() {
             <BrandLogo />
           </Col>
         </Row>
-        
       </Container>
-
     </React.Fragment>
   )
 }
@@ -68,12 +68,3 @@ const footerStyle = {
   background: "var(--mainGray)",
 }
 
-const ImgResponsive = styled.img`
-  height: 150px;
-  @media screen and (max-width: 992px) {
-    height: 125px;
-  }
-  @media screen and (max-width: 600px) {
-    height: 125px;
-  }
-`

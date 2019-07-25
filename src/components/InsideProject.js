@@ -1,9 +1,7 @@
 import React from 'react';
 import { Container, } from 'react-bootstrap';
-import MargenTop from './shared-components/MargenTop';
-import ResponsiveTitle from './shared-components/ResponsiveTitle';
+import { MargenTop, ResponsiveTitle, } from './shared-components/StyledComponents';
 import JumbotronContact from './JumbotronContact';
-
 
 export default function InsideProject() {
   return (

@@ -28,10 +28,10 @@ export default function NavbarForte() {
             item={data.dataLinks[0]}
           />
           {linkList}
-          <StyledLinksIcon inputColor="#3b5998" href="https://www.facebook.com/FORTEstructuras/" >
+          <StyledLinksIcon inputColor="white" href="https://www.facebook.com/FORTEstructuras/" >
             <i class="fab fa-facebook fa-2x mt-1"></i>
           </StyledLinksIcon>
-          <StyledLinksIcon inputColor="#25D366" href="https://wa.me/5493571323500">
+          <StyledLinksIcon inputColor="white" href="https://wa.me/5493571323500">
             <i class="fab fa-whatsapp fa-2x mt-1"></i>
           </StyledLinksIcon>
           <ButtonToolbar>

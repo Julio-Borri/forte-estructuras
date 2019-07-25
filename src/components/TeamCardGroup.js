@@ -4,7 +4,7 @@ import TeamCard from './shared-components/TeamCard';
 import styled from 'styled-components';
 import data from '../data';
 import bgContainer from '../img/bgTeam.png';
-import ResponsiveTitle from './shared-components/ResponsiveTitle';
+import { ResponsiveTitle, } from './shared-components/StyledComponents';
 
 export default function TeamCardGroup() {
 

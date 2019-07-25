@@ -3,10 +3,9 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 export default function DropdownLinks(props) {
   return (
-    <NavDropdown.Item 
+    <NavDropdown.Item
       href="/"
-    >
-      {props.item.title}
+    >{props.item.title}     
     </NavDropdown.Item>
   )
 }
