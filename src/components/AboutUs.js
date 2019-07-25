@@ -4,6 +4,13 @@ import data from '../data';
 import brandLogo from '../img/forte logo.png';
 import { ImgResponsive, ResponsiveTitle, StyledRow, StyledH3, } from './shared-components/StyledComponents';
 
+const imgStyle = {
+  width: "100%",
+  height: "100%",
+  objectFit: "cover",
+  overflow: "hidden",
+}
+
 export default function GallerySlide() {
   return (
     <React.Fragment>
@@ -60,13 +67,6 @@ export default function GallerySlide() {
 
     </React.Fragment>
   )
-}
-
-const imgStyle = {
-  width: "100%",
-  height: "100%",
-  objectFit: "cover",
-  overflow: "hidden",
 }
 
 

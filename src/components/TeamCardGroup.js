@@ -1,10 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import TeamCard from './shared-components/TeamCard';
-import styled from 'styled-components';
 import data from '../data';
-import bgContainer from '../img/bgTeam.png';
-import { ResponsiveTitle, } from './shared-components/StyledComponents';
+import { ResponsiveTitle, MainContainer, } from './shared-components/StyledComponents';
 
 export default function TeamCardGroup() {
 
@@ -34,12 +32,3 @@ export default function TeamCardGroup() {
     </React.Fragment>
   )
 }
-
-const MainContainer = styled(Container)`
-  background: url(${bgContainer});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  margin: 80px 0;
-`

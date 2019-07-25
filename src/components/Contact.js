@@ -1,11 +1,9 @@
 import React from 'react';
 import ContactForm from './shared-components/ContactForm';
-import { ResponsiveTitle, } from './shared-components/StyledComponents';
+import { ResponsiveTitle, MainContainer, } from './shared-components/StyledComponents';
 import data from '../data';
 import { Container, Row, Col, } from 'react-bootstrap';
 import FooterLinks from './shared-components/FooterLinks';
-import styled from 'styled-components';
-import bgJumbotron from '../img/bgJumbotron.png';
 import SkewedRow from './shared-components/SkewedRow';
 
 export default function Contact() {
@@ -54,14 +52,3 @@ export default function Contact() {
     </React.Fragment>
   )
 }
-
-
-const MainContainer = styled(Container)`
-  background: url(${bgJumbotron});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  padding-top: 80px;
-  text-transform: lowercase !important;
-`

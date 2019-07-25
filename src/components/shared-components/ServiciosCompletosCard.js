@@ -1,8 +1,8 @@
 import React from 'react';
-import { Row, Col, } from 'react-bootstrap';
+import { Row, } from 'react-bootstrap';
 import { ResponsiveTitle } from './StyledComponents';
-import styled from 'styled-components';
 import ButtonModalShow from './ButtonModalShow';
+import { ColImagenServicio, } from './StyledComponents';
 
 export default function ServiciosCompletosCard(props) {
   return (
@@ -24,19 +24,4 @@ export default function ServiciosCompletosCard(props) {
   )
 }
 
-const ColImagenServicio = styled(Col)`
-  background-image: url(${props => props.picture});
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  box-shadow: 0 0 6px 0 black;
-  font-size: 22px;
-  font-weight: 700;
-  height: 150px;
-  :hover {
-    background-image: url(${props => props.pictureColor});
-    transform: scale(1.01);
-    transition: transform 0.1s ease-in-out;
-  }
-`
 

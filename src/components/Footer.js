@@ -19,7 +19,7 @@ export default function Footer() {
 
   return (
     <React.Fragment>
-      <Container fluid style={footerStyle} className="mt-5">
+      <Container fluid style={{ background: "var(--mainGray)", }} className="mt-5">
         <Row>
           <Col xs={12} md={3} className="d-flex justify-content-center align-items-center py-4">
               <a href="/">
@@ -63,8 +63,3 @@ export default function Footer() {
     </React.Fragment>
   )
 }
-
-const footerStyle = {
-  background: "var(--mainGray)",
-}
-

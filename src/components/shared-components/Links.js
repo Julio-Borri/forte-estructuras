@@ -1,5 +1,5 @@
 import React from 'react';
-import StyledLinks from './StyledLinks';
+import { StyledLinks, } from './StyledComponents';
 
 export default function Links(props) {
   return (

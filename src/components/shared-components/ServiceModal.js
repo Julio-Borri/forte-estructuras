@@ -1,8 +1,8 @@
 import React from 'react';
 import { Modal, Button, Container, Row, Col } from 'react-bootstrap';
-import styled from 'styled-components';
+import { ColBg, } from './StyledComponents';
 
-function ServiceModal(props) {
+export default function ServiceModal(props) {
   return (
     <Modal
       {...props}
@@ -32,13 +32,3 @@ function ServiceModal(props) {
     </Modal>
   );
 }
-
-const ColBg = styled(Col)`
-  height: 300px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(${props => props.bgImage});
-`
-
-export default ServiceModal;

@@ -1,12 +1,10 @@
 import React from 'react';
 import { Container, Row, Col, } from 'react-bootstrap';
 import data from '../data';
-import { ResponsiveTitle, } from './shared-components/StyledComponents';
+import { ResponsiveTitle, MainContainer, } from './shared-components/StyledComponents';
 import ServiciosCompletosCard from './shared-components/ServiciosCompletosCard';
 import JumbotronContact from './JumbotronContact';
-import styled from 'styled-components';
 import SkewedRow from './shared-components/SkewedRow';
-import bgJumbotron from '../img/bgJumbotron.png';
 
 export default function ServiciosCompleto(props) {
 
@@ -37,13 +35,3 @@ export default function ServiciosCompleto(props) {
   )
 }
 
-
-const MainContainer = styled(Container)`
-  background: url(${bgJumbotron});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  padding-top: 80px;
-  text-transform: lowercase !important;
-`

@@ -3,8 +3,12 @@ import { Navbar, Nav, ButtonToolbar, OverlayTrigger, Tooltip, } from 'react-boot
 import data from '../data';
 import brandLogo from '../img/logoWideNegro.png';
 import Links from './shared-components/Links';
-import styled from 'styled-components';
-import StyledLinksIcon from './shared-components/StyledLinksIcon';
+import { StyledLinksIcon, ImgResponsive, NavToggle, } from './shared-components/StyledComponents';
+
+const navStyle = {
+  background: "var(--mainYellow)",
+  boxShadow: "0 0 6px 0 black",
+}
 
 export default function NavbarForte() {
   const linkList = data.dataLinks.slice(1, 5).map(
@@ -19,14 +23,12 @@ export default function NavbarForte() {
       fixed="top"
     >
       <Navbar.Brand href="/">
-        <ImgResponsive src={brandLogo} alt="Brand Logo" />
+        <ImgResponsive src={brandLogo} alt="Brand Logo" normalHeight="60px" mediumHeight="50px" smallHeight="40px" />
       </Navbar.Brand>
       <NavToggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto">
-          <Links
-            item={data.dataLinks[0]}
-          />
+          <Links item={data.dataLinks[0]} />
           {linkList}
           <StyledLinksIcon inputColor="white" href="https://www.facebook.com/FORTEstructuras/" >
             <i class="fab fa-facebook fa-2x mt-1"></i>
@@ -35,15 +37,15 @@ export default function NavbarForte() {
             <i class="fab fa-whatsapp fa-2x mt-1"></i>
           </StyledLinksIcon>
           <ButtonToolbar>
-              <OverlayTrigger key='bottom' placement='bottom'
-                overlay={
-                  <Tooltip id={`tooltip-$'bottom'`}>
-                    <strong>03571 - 643736</strong>
-                  </Tooltip>
-                }
-              >
-                <StyledLinksIcon inputColor="white"><i class="fas fa-phone-square-alt fa-2x mt-1"></i></StyledLinksIcon>
-              </OverlayTrigger>           
+            <OverlayTrigger key='bottom' placement='bottom'
+              overlay={
+                <Tooltip id={`tooltip-$'bottom'`}>
+                  <strong>03571 - 643736</strong>
+                </Tooltip>
+              }
+            >
+              <StyledLinksIcon inputColor="white"><i class="fas fa-phone-square-alt fa-2x mt-1"></i></StyledLinksIcon>
+            </OverlayTrigger>
           </ButtonToolbar>
         </Nav>
       </Navbar.Collapse>
@@ -51,26 +53,9 @@ export default function NavbarForte() {
   )
 }
 
-const navStyle = {
-  background: "var(--mainYellow)",
-  boxShadow: "0 0 6px 0 black",
 
-}
 
-const NavToggle = styled(Navbar.Toggle)`
-:focus { outline: none !important; }
-:hover { border: 1px solid white !important; }
-`
 
-const ImgResponsive = styled.img`
-  height: 60px;
-  @media screen and (max-width: 992px) {
-    height: 50px;
-  }
-  @media screen and (max-width: 600px) {
-    height: 40px;
-  }
-`
 
 
 

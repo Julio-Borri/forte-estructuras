@@ -150,20 +150,17 @@ const data = {
     {
       id: 2,
       icon: "fab fa-whatsapp fa-2x",
-      //icon: "fab fa-whatsapp-square fa-2x",
       text: "3571-323500",
       href:"https://wa.me/5493571323500",
     },
     {
       id: 3,
-      //icon: "fab fas fa-phone fa-2x",
       icon: "fas fa-phone-square-alt fa-2x",
       text: "03571-643736",
       href: "/contact"
     },
     {
       id: 4,
-      //icon: "fab fas fa-phone fa-2x",
       icon: "far fa-envelope fa-2x",
       text: "info@fortestructuras.com",
       href: "/contact"

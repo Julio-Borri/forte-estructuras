@@ -10,8 +10,7 @@ import ServiciosCompleto from './components/ServiciosCompleto';
 import InsideProject from './components/InsideProject';
 import Contact from './components/Contact';
 
-
-function App() {
+export default function App() {
   return (
     <React.Fragment>
       <NavbarForte />
@@ -27,5 +26,3 @@ function App() {
 
   );
 }
-
-export default App;
