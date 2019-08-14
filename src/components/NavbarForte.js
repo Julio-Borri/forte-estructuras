@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, ButtonToolbar, OverlayTrigger, Tooltip, } from 'react-bootstrap';
 import data from '../data';
-import brandLogo from '../img/logoWideNegro.png';
+import brandLogo from '../img/ForteNegro.png';
 import Links from './shared-components/Links';
 import { StyledLinksIcon, ImgResponsive, NavToggle, } from './shared-components/StyledComponents';
 
@@ -23,7 +23,7 @@ export default function NavbarForte() {
       fixed="top"
     >
       <Navbar.Brand href="/">
-        <ImgResponsive src={brandLogo} alt="Brand Logo" normalHeight="60px" mediumHeight="50px" smallHeight="40px" />
+        <ImgResponsive src={brandLogo} alt="Brand Logo" normalHeight="25px" mediumHeight="20px" smallHeight="20px" />
       </Navbar.Brand>
       <NavToggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">

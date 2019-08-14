@@ -131,7 +131,7 @@ const data = {
   ],
   textosVarios: {
     texto1: "calidad, servicio y garantía en ",
-    texto2: "fabricación y montaje",
+    texto2: "fabricación y montaje de estructuras metálicas",
     texto3: "Forte es una marca que representa calidad y servicio que encarna un espíritu creativo, adaptable y flexible.",
     texto4: "El enfoque vanguardista de Forte hacia las estructuras metálicas siempre la ha diferenciado de los competidores, ofreciendo servicio al cliente único, con la prioridad de entregar un producto fuerte, durable y de calidad.",
     texto5: "La filosofía institucional está fundada en la mejor relación precio/producto. Para ello hemos formado un equipo de trabajo sólido y profesional. Contando con equipamiento e instalaciones de primer nivel, con la motivación principal de entregar valor y soluciones a nuestros clientes.",

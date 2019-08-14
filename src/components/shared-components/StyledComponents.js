@@ -1,7 +1,7 @@
 import styled, { keyframes, } from 'styled-components';
 import { Container, Row, Col, Nav, Navbar, } from 'react-bootstrap';
 import bgJumbotron from '../../img/bgJumbotron.png';
-import bgHeader from '../../img/bg_header2.png'
+import bgHeader from '../../img/bg_header.png'
 
 export const ImgResponsive = styled.img`
   height: ${props => props.normalHeight};
